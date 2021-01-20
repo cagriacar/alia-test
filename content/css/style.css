@@ -1,0 +1,314 @@
+@font-face {
+  font-family: "Mulish", sans-serif;
+
+  src: url("../fonts/Mulish-Black.ttf") format("truetype"),
+    url("../fonts/Mulish-BlackItalic.ttf") format("truetype"),
+    url("../fonts/Mulish-Bold.ttf") format("truetype"),
+    url("../fonts/Mulish-BoldItalic.ttf") format("truetype"),
+    url("../fonts/Mulish-ExtraBold.ttf") format("truetype"),
+    url("../fonts/Mulish-ExtraBoldItalic.ttf") format("truetype"),
+    url("../fonts/Mulish-ExtraLight.ttf") format("truetype"),
+    url("../fonts/Mulish-ExtraLightItalic.ttf") format("truetype"),
+    url("../fonts/Mulish-Italic.ttf") format("truetype"),
+    url("../fonts/Mulish-Light.ttf") format("truetype"),
+    url("../fonts/Mulish-LightItalic.ttf") format("truetype"),
+    url("../fonts/Mulish-Medium.ttf") format("truetype"),
+    url("../fonts/Mulish-MediumItalic.ttf") format("truetype"),
+    url("../fonts/Mulish-Regular.ttf") format("truetype"),
+    url("../fonts/Mulish-SemiBold.ttf") format("truetype"),
+    url("../fonts/Mulish-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oswald ", sans-serif;
+
+  src: url("../fonts/Oswald-Medium.ttf") format("truetype"),
+    url("../fonts/Oswald-Regular.ttf") format("truetype"),
+    url("../fonts/Oswald-Light.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Header */
+.logo {
+  font-weight: 600;
+  font-size: 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo a {
+  color: #000;
+}
+.logo a:hover {
+  text-decoration: none;
+  color: #ed4d33;
+}
+.menu-hr {
+  width: 30px;
+  margin-left: 30px;
+}
+.menu-hr hr {
+  border-top: 1px solid grey;
+}
+.nav-bar {
+  margin-left: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.nav-bar a {
+  color: #000;
+  text-decoration: none;
+  font-family: " Oswald Medium", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+}
+.nav-bar a:hover {
+  color: #ed4d33;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* Content */
+
+.sidebar-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /* Position the items */
+  /*   :nth-child(2) { top: 25%; }
+ &:nth-child(3) { top: 50%; }
+  &:nth-child(4) { top: 75%; }  */
+}
+
+.make-me-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0 15px;
+}
+.title-code {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.title-model {
+  font-size: 18px;
+}
+.title-price {
+  font-family: "Mulish ExtraBold", sans-serif !important;
+  font-size: 13px;
+  font-weight: bold;
+}
+.title-price-color {
+  color: #ed4d33;
+  margin-left: 10px;
+}
+.title-discount {
+  font-size: 13px;
+  color: #ed4d33;
+}
+.title-color-selected {
+  font-size: 13px;
+  margin-top: 30px;
+}
+.thumbnails {
+  margin-top: 20px;
+}
+.thumbnails ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.thumbnails ul li {
+  margin-right: 10px;
+}
+.thumbnails ul li:hover {
+  border: 2px solid #ed4d33;
+}
+.title-size {
+  font-size: 13px;
+  margin-top: 40px;
+}
+.title-size-number {
+  margin-top: 20px;
+}
+.title-size-number ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+.title-size-number ul li {
+  font-size: 13px;
+  font-family: "Mulish Medium", sans-serif;
+  padding: 8px 10px;
+  margin: 5px;
+  color: grey;
+}
+.active {
+  border: 2px solid #000;
+  color: #000 !important;
+}
+.title-size-number ul li:hover {
+  border: 2px solid #ed4d33;
+  color: #000;
+}
+.title-find-size {
+  font-size: 13px;
+  font-family: "Mulish SemiBold", sans-serif;
+  font-weight: bold;
+}
+.add-to-cart {
+  margin-top: 25px;
+}
+.add-to-cart button {
+  width: 80%;
+  font-family: "Mulish Bold", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 0px;
+  padding: 10px 0;
+  background: black;
+}
+.title-content {
+  margin: 40px 35px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
+}
+.content-btn {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.title-free-shipping {
+  font-family: "Mulish Medium", sans-serif;
+  font-size: 12px;
+  text-align: start;
+  margin-top: 10px;
+}
+/* SECTION */
+.section-title {
+  font-size: 20px;
+  padding: 0;
+}
+.swiper-title-model {
+  font-size: 13px;
+}
+.swiper-title-price {
+  font-size: 13px;
+  font-family: "Mulish ExtraBold", sans-serif;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer-title {
+  font-size: 13px;
+  font-family: "Oswald Medium", sans-serif;
+}
+.footer-title-logo a {
+  color: #ed4d33;
+  font-size: 13px;
+  font-family: "Oswald Light", sans-serif;
+}
+.footer-title-logo a:hover {
+  text-decoration: none;
+  color: #000;
+}
+.footer-contact {
+  font-size: 13px;
+  font-family: "Oswald Medium", sans-serif;
+}
+.footer-social-medias ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer-social-medias ul li {
+  padding-right: 20px;
+}
+.footer-social-medias ul li a {
+  color: #ed4d33;
+  font-size: 13px;
+  font-family: "Oswald Light", sans-serif;
+}
+.footer-social-medias ul li a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-info div {
+  font-size: 12px;
+  font-family: "Oswald Bold", sans-serif;
+  font-weight: bold;
+}
+/* Media Query */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .footer-info {
+    justify-content: flex-start;
+  }
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-title {
+    text-align: center;
+  }
+  .nav-bar {
+    margin-left: 0;
+  }
+  .logo {
+    display: block;
+  }
+  .menu-hr {
+    margin: 0;
+  }
+  .main-img a img {
+    margin: 0 20px;
+    width: 340px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .sidebar-item {
+    position: relative;
+  }
+  .add-to-cart button {
+    width: 80%;
+  }
+}
